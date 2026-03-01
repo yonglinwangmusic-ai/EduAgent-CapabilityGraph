@@ -66,3 +66,5 @@ Weight Calculation
 Job Capability Graph Output
 ```
 ## Example Output
+## Workflow
+![System Architecture](images/whiteboard_exported_image.png)
