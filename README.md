@@ -64,5 +64,5 @@ Frequency Statistics
 Weight Calculation
     ↓
 Job Capability Graph Output
-
+```
 # Example Output
