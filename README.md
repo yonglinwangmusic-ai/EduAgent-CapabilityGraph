@@ -64,17 +64,3 @@ Frequency Statistics
 Weight Calculation
     ↓
 Job Capability Graph Output
-
-
-
-# AI Job Graph
-
-An AI system that standardizes job descriptions and builds capability graphs.
-
-## Installation
-
-pip install -r requirements.txt
-
-## Usage
-
-python run.py
