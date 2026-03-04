@@ -37,34 +37,4 @@ Support feedback-loop evolution
 Become the capability standard layer for medical aesthetics hiring
 Provide structured APIs for ATS / LMS / HR analytics
 Evolve into a vertical AI Agent platform for talent intelligence
-## Analytic Flow
-```
-Raw JD Data
-    ↓
-Filtering & Preprocessing
-    ↓
-JD-Level Unique ID (A-ID)
-    ↓
-Semantic Role Analysis (LLM)
-    ↓
-Role Deduplication & Merge
-    ↓
-Official Role Name Generation
-    ↓
-Role-Level Unique ID (B-ID)
-    ↓
-JD ↔ Official Role Mapping
-    ↓
-Skill Extraction (LLM Parsing)
-    ↓
-Skill Structuring
-    ↓
-Skill Semantic Deduplication
-    ↓
-Frequency Statistics
-    ↓
-Weight Calculation
-    ↓
-Job Capability Graph Output
-```
 ## Example Output
