@@ -25,7 +25,7 @@ MedAI-JobGraph is a domain-specific AI system that:
   6. Computes skill weights
   7. Outputs a reusable job capability graph
 This is not a generic AI Agent framework, but a vertical intelligence system optimized for high-accuracy domain reasoning.
-## Workflow
+## Analytics Flow
 ![Whiteboard](whiteboard_exported_image.png)
 ## Objective 
 ### Core Objectives
