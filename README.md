@@ -1,4 +1,4 @@
-# EDU AI Agent - ABC Consulting Volunteering Project
+# EDU AI Agent - A Pro-bono Consulting Project at A Better Community-ABC
 A Vertical AI Agent System for Medical Aesthetics Job Semantic Standardization & Capability Graph Construction
 ## Background
 In the medical aesthetics industry, job descriptions (JDs) are highly fragmented:
