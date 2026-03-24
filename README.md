@@ -37,4 +37,3 @@ Support feedback-loop evolution
 Become the capability standard layer for medical aesthetics hiring
 Provide structured APIs for ATS / LMS / HR analytics
 Evolve into a vertical AI Agent platform for talent intelligence
-## Example Output
