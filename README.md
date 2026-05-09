@@ -1,38 +1,41 @@
-# EDU AI Agent - A Pro-bono Consulting Project at A Better Community-ABC
-A Vertical AI Agent System for Medical Aesthetics Job Semantic Standardization & Capability Graph Construction
-## Background
-In the medical aesthetics industry, job descriptions (JDs) are highly fragmented:
-  1. Different titles may represent the same core role
-  2. Similar responsibilities are expressed using inconsistent language
-  3. Noise data (salary, location, benefits) obscures semantic structure
-  4. Capability requirements are not standardized
+# VocAI-JobGraph: AI Agent Architecture for Vocational Education Capability Graph Construction
+An open-source system architecture that uses vertical AI Agents to transform fragmented recruitment data into structured, standardized capability graphs for vocational education programs. Designed to be domain-agnostic and scalable across any vocational discipline — piloted with medical aesthetics as the first case study. Built as a pro-bono technology consulting project for A Better Community (ABC), a nonprofit empowering underrepresented communities through workforce development.
 
-This fragmentation makes it difficult to:
-  1. Build structured talent taxonomie
-  2. Analyze skill trends
-  3. Compare roles across organizations
+## About This Repository
+This repository documents the system architecture and solution design I created as a volunteer technology consultant for ABC's vocational education AI initiative, in partnership with Polus International College.
+The college operates 5 schools, 50 programs, 17,000+ enrolled students, and ~600 faculty members, with a 30-year track record of producing 60,000+ graduates at a 97%+ employment rate — the only private provincial-level demonstration vocational college in China. Yet like most vocational institutions, it faces a fundamental challenge: how to systematically align 50 diverse curricula with rapidly evolving market demands — a process that currently requires months of manual effort per program with no structured data pipeline.
+This project represents the 0-to-1 cold start — designing a universal AI Agent architecture that can be applied program-by-program, starting from a single pilot and scaling to full institutional coverage. We selected medical aesthetics as the first pilot due to its high market fragmentation and urgent curriculum alignment needs.
 
-Traditional keyword-based parsing is insufficient because job semantics require deep contextual reasoning.
-This project introduces a vertical AI Agent architecture that standardizes job roles and constructs a structured capability graph using large language models.
-## Overview
-MedAI-JobGraph is a domain-specific AI system that:
-  1. Standardizes semantically equivalent job titles
-  2. Generates official job taxonomies
-  3. Creates dual-layer unique identifiers
-  4. Extracts structured capability elements
-  5. Aggregates and deduplicates skills
-  6. Computes skill weights
-  7. Outputs a reusable job capability graph
-This is not a generic AI Agent framework, but a vertical intelligence system optimized for high-accuracy domain reasoning.
-## Analytics Flow
-![Whiteboard](whiteboard_exported_image.png)
-## Objective 
-### Core Objectives
-Transform unstructured JD text into structured role intelligence
-Build a stable role–skill ontology
-Enable measurable skill weight computation
-Support feedback-loop evolution
-### Long-Term Vision
-Become the capability standard layer for medical aesthetics hiring
-Provide structured APIs for ATS / LMS / HR analytics
-Evolve into a vertical AI Agent platform for talent intelligence
+I served as the Solution Architect, responsible for:
+- Designing the domain-agnostic AI Agent pipeline architecture that can be replicated across any vocational discipline
+- Creating the 4-stage analytical framework: Framework Construction → Data Preparation → Mapping & Association → Analysis & Application
+- Specifying the dual-layer unique identifier system (A-code / B-code) for data lineage and traceability
+- Defining the 3-step AI semantic reasoning approach for role normalization, capability extraction, and skill deduplication
+The implementation was carried out by the project team based on this architecture, using Coze (ByteDance) as the agent orchestration platform.
+
+## The Problem
+China's vocational education system is undergoing rapid transformation. Institutions like Polus International College must continuously align their curricula with market demand across dozens of programs — but the current process is entirely manual, slow, and unscalable:
+- **Scale:** 50 programs × hundreds of relevant job types = thousands of JDs to analyze, with no automated pipeline
+Manual bottleneck: A single program's curriculum alignment takes 2+ months of expert review; full institutional coverage (5,000+ course-level reviews) is practically impossible
+- **Teacher quality variance:** Among ~600 faculty, teaching quality varies; standardized capability benchmarks are needed but don't exist in structured, data-driven form
+- **JD fragmentation:** Across any vocational domain, job descriptions are inconsistent — different titles for the same role, vague skill requirements, noise data obscuring real competency needs
+- **No feedback loop:** Even when market analysis is done manually, there's no systematic mechanism to feed findings back into curriculum design
+Traditional keyword-based NLP approaches fail because job semantics require deep contextual reasoning — especially in specialized vocational domains where market slang, academic terminology, and regulatory language coexist.
+
+## Solution: A Universal Architecture
+The architecture strictly separates domain-agnostic infrastructure (pipeline, identifier system, agent orchestration, graph schema) from domain-specific configuration (capability standards, terminology dictionaries, data sources). Switching from medical aesthetics to automotive technology or early childhood education requires only swapping the configuration layer — not rebuilding the system.
+### Core Design Principle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
