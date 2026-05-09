@@ -19,6 +19,7 @@ Why Traditional NLP Fails
 ### Core Design Principle
 Strict separation between domain-agnostic infrastructure (reusable across any program) and domain-specific configuration (swapped per program). Adding a new vocational discipline requires only changing the configuration — not rebuilding the system.
 #### Architecture Separation Diagram
+、、、
 ┌────────────────────────────────────────────────────────┐
 │  Domain Configuration (per program)                     │
 │  • Capability standards                                 │
@@ -33,6 +34,7 @@ Strict separation between domain-agnostic infrastructure (reusable across any pr
 │  • Orchestration engine                                 │
 └────────────────────────────────────────────────────────┘
 #### 4-Stage Analytical Pipeline
+、、、
 Stage 1              Stage 2              Stage 3               Stage 4
 Framework            Data                 Mapping &             Analysis &
 Construction         Preparation          Association           Application
