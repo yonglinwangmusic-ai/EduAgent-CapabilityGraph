@@ -1,6 +1,6 @@
 # EduAgent-CapabilityGraph
 # AI Agent Architecture for Vocational Education Capability Graph Construction
-ystem architecture design for transforming fragmented recruitment data into structured capability graphs for vocational education, using vertical AI Agents. Domain-agnostic — piloted with medical aesthetics. Created as a pro-bono consulting project for A Better Community (ABC), a social enterprise mobilizing professional volunteers to provide management consulting for social organizations in China.
+System architecture design for transforming fragmented recruitment data into structured capability graphs for vocational education, using vertical AI Agents. Domain-agnostic — piloted with medical aesthetics. Created as a pro-bono consulting project for A Better Community (ABC), a social enterprise mobilizing professional volunteers to provide management consulting for social organizations in China.
 ## My Role
 I served as volunteer Solution Architect for this project. This repository documents my architecture and solution design work. The implementation was carried out by the broader project team (~15 volunteers) on the Coze (ByteDance) platform.
 ## Background
@@ -69,4 +69,3 @@ A Better Community (ABC) — Founded in 2008, ABC is China's first social enterp
 Polus International College — Est. 1993. 5 schools, 50 programs, 17,000+ students, 60,000+ graduates, 97%+ employment rate. China's only private provincial-level demonstration vocational college.
 ## License
 MIT License — see LICENSE.
-
