@@ -35,7 +35,7 @@ Strict separation between domain-agnostic infrastructure (reusable across any pr
 └────────────────────────────────────────────────────────┘
 ```
 #### 4-Stage Analytical Pipeline
-、、、
+```
 Stage 1              Stage 2              Stage 3               Stage 4
 Framework            Data                 Mapping &             Analysis &
 Construction         Preparation          Association           Application
@@ -47,7 +47,7 @@ capability           standardization      association           insight reports
 framework                                 matrix built
      ↑                                         │
      └──── Framework dynamic update loop ──────┘
-、、、
+```
 #### Key Design Components
 Dual Identifier System: A-code tags every original JD; B-code maps to standardized positions. This preserves data lineage for weight computation, continuous updates, and root-cause tracing — and works identically across any domain.
 3-Step AI Semantic Reasoning: Decomposed into three focused agents rather than one monolithic LLM call, enabling independent optimization:
@@ -56,11 +56,8 @@ Dual Identifier System: A-code tags every original JD; B-code maps to standardiz
 3. Skill Deduplication & Weighting — merge equivalent skills, compute frequency-based weights
 #### 3-Tier Capability Graph Schema
 Universal schema referenced from national vocational standards, WorldSkills, and OBE methodology:
-| Tier | Content | Reference |
-|---|---|---|
-| Work Tasks | Typical tasks + capability modules | National Standards, WorldSkills |
-| Capability Definition | Measurable standards + learning levels (L1-L4) | Bloom's Taxonomy |
-| Teaching Support | Knowledge requirements + skill requirements | OBE Methodology |
+The capability graph follows a 3-tier schema (Work Tasks → Capability Definition → Teaching Support) referencing national vocational standards, 
+WorldSkills, and OBE methodology. The detailed framework was developed by the Capability Graph team.
 ## Pilot: Medical Aesthetics
 
 ## About the Partners
