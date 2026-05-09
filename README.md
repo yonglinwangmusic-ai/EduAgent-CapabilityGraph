@@ -26,52 +26,6 @@ Traditional keyword-based NLP approaches fail because job semantics require deep
 The architecture strictly separates domain-agnostic infrastructure (pipeline, identifier system, agent orchestration, graph schema) from domain-specific configuration (capability standards, terminology dictionaries, data sources). Switching from medical aesthetics to automotive technology or early childhood education requires only swapping the configuration layer — not rebuilding the system.
 ### Core Design Principle
 
-┌──────────────────────────────────────────────────────────────────┐
-│                    Domain Configuration Layer                     │
-│                                                  │
-│  ┌──────────────┐ ┌──────────────┐ ┌────────────────────────┐    │
-│  │ Capability   │ │ Terminology  │ │ Data Sources           │    │
-│  │ Standards    │ │ Dictionary   │ │ & Keywords             │    │
-│  │   │ │       │ │                     │    │
-│  └──────────────┘ └──────────────┘ └────────────────────────┘    │
-│                    ▲ SWAP THIS LAYER PER PROGRAM ▲               │
-├──────────────────────────────────────────────────────────────────┤
-│                 Domain-Agnostic Infrastructure                    │
-│                                                                   │
-│  ┌─ Agent Pipeline ──────────────────────────────────────────┐   │
-│  │ Ingestion → Cleaning → Normalization → Extraction →       │   │
-│  │ Deduplication → Weight Computation → Graph Generation     │   │
-│  └───────────────────────────────────────────────────────────┘   │
-│  ┌─ Identifier System ──┐  ┌─ Graph Schema ────────────────┐   │
-│  │ A-Code (raw JD)       │  │ Typical Tasks → Capability    │   │
-│  │ B-Code (std. position)│  │ Modules → Standards → Levels  │   │
-│  └───────────────────────┘  └───────────────────────────────┘   │
-│  ┌─ Orchestration ──────────────────────────────────────────┐   │
-│  │ Coze Workflow Engine + LLM Routing + State Management     │   │
-│  └───────────────────────────────────────────────────────────┘   │
-└──────────────────────────────────────────────────────────────────┘
-
-
-## Architecture Details
-### 4-Stage Analytical Pipeline
-Stage 1 — Framework Construction (框架构建)
-Input national/international vocational standards → Build initial capability framework with standard unit library and keyword anchor database.
-Stage 2 — Data Preparation (数据准备)
-Ingest multi-platform JDs → Clean, structure, and standardize using anchor-point matching → Output structured JD database.
-Stage 3 — Mapping & Association (映射与关联, core stage)
-Core matching logic: map JD capability items → standard capability units, via exact match (validate), refinement (enrich), or new tagging (iterate framework). Output: association matrix linking every JD to capability units. Framework dynamic update loop feeds back to Stage 1.
-Stage 4 — Analysis & Application (分析与应用)
-Aggregate analysis to generate capability radar by direction + teaching & market insight reports.
-
-## Design Decisions
-Why Vertical AI Agents over Traditional NLP?
-Every vocational domain has colloquial terminology diverging from textbook language — requiring LLM contextual reasoning, not pattern matching. JD texts mix structured requirements with promotional noise. Capability descriptions are abstract and need transformation into measurable competency statements aligned with Bloom's Taxonomy (L1–L4). Vertical AI Agents deploy specialized LLM reasoning at each pipeline stage with domain-specific prompts that can be swapped per program.
-Why Dual Identifier System (A-Code / B-Code)?
-The A-code preserves every original JD's lineage; the B-code maps it to a standardized position. This enables weight computation, continuous updates without losing historical mappings, and root-cause analysis. This mechanism is domain-agnostic — it works identically across any vocational field.
-Why 3-Step AI Semantic Understanding?
-A single LLM call attempting simultaneous title normalization, capability extraction, and skill deduplication produces unreliable results. Decomposing into three focused agents allows independent optimization: (1) Role Normalization Agent, (2) Capability Extraction Agent (Context + Action + Measurable Outcome + Constraints), (3) Skill Deduplication & Weighting Agent.
-
-
 
 
 
