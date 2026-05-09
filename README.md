@@ -19,7 +19,7 @@ Why Traditional NLP Fails
 ### Core Design Principle
 Strict separation between domain-agnostic infrastructure (reusable across any program) and domain-specific configuration (swapped per program). Adding a new vocational discipline requires only changing the configuration — not rebuilding the system.
 #### Architecture Separation Diagram
-、、、
+```
 ┌────────────────────────────────────────────────────────┐
 │  Domain Configuration (per program)                     │
 │  • Capability standards                                 │
@@ -33,6 +33,7 @@ Strict separation between domain-agnostic infrastructure (reusable across any pr
 │  • Capability graph schema (3-tier)                     │
 │  • Orchestration engine                                 │
 └────────────────────────────────────────────────────────┘
+```
 #### 4-Stage Analytical Pipeline
 、、、
 Stage 1              Stage 2              Stage 3               Stage 4
@@ -46,6 +47,7 @@ capability           standardization      association           insight reports
 framework                                 matrix built
      ↑                                         │
      └──── Framework dynamic update loop ──────┘
+、、、
 #### Key Design Components
 Dual Identifier System: A-code tags every original JD; B-code maps to standardized positions. This preserves data lineage for weight computation, continuous updates, and root-cause tracing — and works identically across any domain.
 3-Step AI Semantic Reasoning: Decomposed into three focused agents rather than one monolithic LLM call, enabling independent optimization:
