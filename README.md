@@ -59,9 +59,14 @@ Universal schema referenced from national vocational standards, WorldSkills, and
 The capability graph follows a 3-tier schema (Work Tasks → Capability Definition → Teaching Support) referencing national vocational standards, 
 WorldSkills, and OBE methodology. The detailed framework was developed by the Capability Graph team.
 ## Pilot: Medical Aesthetics
-
+Selected as the first pilot due to extreme title fragmentation, rapid market evolution, and critical medical/non-medical compliance boundaries. Results:
+1. 388 JDs processed from major recruitment platforms
+2. 6 standardized role categories identified
+3. 18 capability modules defined across roles
+4. Interactive knowledge graph, skill frequency analysis, and professional fit radar generated
 ## About the Partners
-
+A Better Community (ABC) — Founded in 2008, ABC is China's first social enterprise that mobilizes professional volunteers to provide management consulting for social organizations. With 6 chapters (Beijing, Shanghai, Chengdu, Shenzhen, Guangzhou, Hangzhou), ABC has engaged 3,100+ professional volunteers across 300+ consulting projects in education, environment, social services, and more.
+Polus International College — Est. 1993. 5 schools, 50 programs, 17,000+ students, 60,000+ graduates, 97%+ employment rate. China's only private provincial-level demonstration vocational college.
 ## License
 MIT License — see LICENSE.
 
