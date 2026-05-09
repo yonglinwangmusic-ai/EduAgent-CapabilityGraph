@@ -18,20 +18,45 @@ Why Traditional NLP Fails
 ## Solution Architecture
 ### Core Design Principle
 Strict separation between domain-agnostic infrastructure (reusable across any program) and domain-specific configuration (swapped per program). Adding a new vocational discipline requires only changing the configuration — not rebuilding the system.
-┌────────────────────────────────────┐
-│  Domain Configuration (per program)│
-│  • Capability standards│
-│  • Terminology dictionary│
-│  • Data sources & keywords│
-│            ▲ SWAP THIS LAYER PER PROGRAM ▲│
-├───────────────────────────────────────────┤
-│  Domain-Agnostic Infrastructure│
-│  • AI Agent pipeline (4-stage)│
-│  • Dual identifier system (A-code / B-code)│
-│  • Capability graph schema (3-tier)│
-│  • Orchestration engine │
-└────────────────────────────────────────────┘
+#### Architecture Separation Diagram
+┌────────────────────────────────────────────────────────┐
+│  Domain Configuration (per program)                     │
+│  • Capability standards                                 │
+│  • Terminology dictionary                               │
+│  • Data sources & keywords                              │
+│            ▲ SWAP THIS LAYER PER PROGRAM ▲              │
+├────────────────────────────────────────────────────────┤
+│  Domain-Agnostic Infrastructure                         │
+│  • AI Agent pipeline (4-stage)                          │
+│  • Dual identifier system (A-code / B-code)             │
+│  • Capability graph schema (3-tier)                     │
+│  • Orchestration engine                                 │
+└────────────────────────────────────────────────────────┘
+#### 4-Stage Analytical Pipeline
+Stage 1              Stage 2              Stage 3               Stage 4
+Framework            Data                 Mapping &             Analysis &
+Construction         Preparation          Association           Application
 
+National/Intl.  →    Multi-platform  →    JD capability    →    Capability radar
+standards            JD ingestion,        items matched         per direction;
+build initial        cleaning &           to std. units;        teaching & market
+capability           standardization      association           insight reports
+framework                                 matrix built
+     ↑                                         │
+     └──── Framework dynamic update loop ──────┘
+#### Key Design Components
+Dual Identifier System: A-code tags every original JD; B-code maps to standardized positions. This preserves data lineage for weight computation, continuous updates, and root-cause tracing — and works identically across any domain.
+3-Step AI Semantic Reasoning: Decomposed into three focused agents rather than one monolithic LLM call, enabling independent optimization:
+1. Role Normalization — map diverse titles to canonical roles
+2. Capability Extraction — extract structured elements: Context + Action + Measurable Outcome + Constraints
+3. Skill Deduplication & Weighting — merge equivalent skills, compute frequency-based weights
+#### 3-Tier Capability Graph Schema
+Universal schema referenced from national vocational standards, WorldSkills, and OBE methodology:
+| Tier | Content | Reference |
+|---|---|---|
+| Work Tasks | Typical tasks + capability modules | National Standards, WorldSkills |
+| Capability Definition | Measurable standards + learning levels (L1-L4) | Bloom's Taxonomy |
+| Teaching Support | Knowledge requirements + skill requirements | OBE Methodology |
 ## Pilot: Medical Aesthetics
 
 ## About the Partners
