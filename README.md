@@ -1,4 +1,4 @@
-# EduAIAgent-CapabilityGraph
+# EduAgent-CapabilityGraph
 # AI Agent Architecture for Vocational Education Capability Graph Construction
 ystem architecture design for transforming fragmented recruitment data into structured capability graphs for vocational education, using vertical AI Agents. Domain-agnostic — piloted with medical aesthetics. Created as a pro-bono consulting project for A Better Community (ABC), a social enterprise mobilizing professional volunteers to provide management consulting for social organizations in China.
 ## My Role
@@ -16,6 +16,7 @@ Across any vocational domain, recruitment data suffers from the same structural 
 Why Traditional NLP Fails
 - Keyword-based approaches cannot handle the contextual reasoning required: domain-specific slang vs academic terminology, implicit skill requirements, and the need to transform raw JD language into measurable educational competency statements.
 ## Solution Architecture
+
 
 ## Pilot: Medical Aesthetics
 
