@@ -1,4 +1,4 @@
-# VocAI-JobGraph: AI Agent Architecture for Vocational Education Capability Graph Construction
+# EduAgent-CapabilityGraph: AI Agent Architecture for Vocational Education Capability Graph Construction
 An open-source system architecture that uses vertical AI Agents to transform fragmented recruitment data into structured, standardized capability graphs for vocational education programs. Designed to be domain-agnostic and scalable across any vocational discipline — piloted with medical aesthetics as the first case study. Built as a pro-bono technology consulting project for A Better Community (ABC), a nonprofit empowering underrepresented communities through workforce development.
 
 ## About This Repository
