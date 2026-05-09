@@ -1,6 +1,6 @@
 # Impact
 ## Context
-Pro-bono technology consulting for A Better Community (ABC), in partnership with Polus International College. I volunteered as digital consultant from October 2025 to Fed 2026, outside of my regular employment.
+Pro-bono technology consulting for A Better Community (ABC), in partnership with Polus International College. I volunteered as digital consultant from Oct 2025 to Fed 2026, outside of my regular employment.
 ## My Contribution
 Designed the complete system architecture for a domain-agnostic AI Agent pipeline — the 0-to-1 cold start with no prior system or methodology in place. Specific contributions:
 - 4-stage analytical pipeline (Framework → Data → Mapping → Analysis)
