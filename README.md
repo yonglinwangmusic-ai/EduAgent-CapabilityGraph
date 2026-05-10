@@ -69,6 +69,6 @@ The partner institution selected medical aesthetics as the first pilot program f
 ### A Better Community (ABC)
 Founded in 2008, ABC is China's first social enterprise that mobilizes professional volunteers to provide management consulting for social organizations. With 6 chapters (Beijing, Shanghai, Chengdu, Shenzhen, Guangzhou, Hangzhou), ABC has engaged 3,100+ professional volunteers across 300+ consulting projects in education, environment, social services, and more.
 ### Polus International College
-Est. 1993. 5 schools, 50 programs, 17,000+ students, 60,000+ graduates, 97%+ employment rate. China's only private provincial-level demonstration vocational college.
+Est. 1993. China's only private provincial-level demonstration vocational college.
 ## License
 MIT License — see LICENSE.
