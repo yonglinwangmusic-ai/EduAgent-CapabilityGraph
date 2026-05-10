@@ -50,7 +50,7 @@ framework                                 matrix built
 ```
 #### Key Design Components
 **Dual Identifier System**: A-code tags every original JD; B-code maps to standardized positions. This preserves data lineage for weight computation, continuous updates, and root-cause tracing — and works identically across any domain.
-**3-Step AI Semantic Reasoning:** Instead of one big LLM call trying to do everything at once, I split it into three focused agents so each step can be tuned separately:
+**3-Step AI Semantic Reasoning**: Instead of one big LLM call trying to do everything at once, I split it into three focused agents so each step can be tuned separately:
 1. Role Normalization — map diverse titles to canonical roles
 2. Capability Extraction — extract structured elements: Context + Action + Measurable Outcome + Constraints
 3. Skill Deduplication & Weighting — merge equivalent skills, compute frequency-based weights
@@ -59,7 +59,7 @@ Universal schema referenced from national vocational standards, WorldSkills, and
 The capability graph follows a 3-tier schema (Work Tasks → Capability Definition → Teaching Support) referencing national vocational standards, 
 WorldSkills, and OBE methodology. The detailed framework was developed by the Capability Graph team.
 ## Pilot: Medical Aesthetics
-Selected as the first pilot due to extreme title fragmentation, rapid market evolution, and critical medical/non-medical compliance boundaries. Results:
+The partner institution selected medical aesthetics as the first pilot program for this architecture. Result:
 - 388 JDs processed from major recruitment platforms
 - 6 standardized role categories identified
 - 18 capability modules defined across roles
