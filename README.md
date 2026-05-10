@@ -61,7 +61,7 @@ Universal schema referenced from national vocational standards, WorldSkills, and
 The capability graph follows a 3-tier schema (Work Tasks → Capability Definition → Teaching Support) referencing national vocational standards, 
 WorldSkills, and OBE methodology. The detailed framework was developed by the Capability Graph team.
 ## Pilot: Medical Aesthetics
-The partner institution selected medical aesthetics as the first pilot program for this architecture. Result:
+The partner institution selected medical aesthetics as the first pilot program for this architecture. Results:
 - 388 JDs processed from major recruitment platforms
 - 6 standardized role categories identified
 - 18 capability modules defined across roles
