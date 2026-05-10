@@ -49,8 +49,10 @@ framework                                 matrix built
      └──── Framework dynamic update loop ──────┘
 ```
 #### Key Design Components
-Dual Identifier System: A-code tags every original JD; B-code maps to standardized positions. This preserves data lineage for weight computation, continuous updates, and root-cause tracing — and works identically across any domain.
-3-Step AI Semantic Reasoning: Instead of one big LLM call trying to do everything at once, I split it into three focused agents so each step can be tuned separately:
+##### Dual Identifier System
+A-code tags every original JD; B-code maps to standardized positions. This preserves data lineage for weight computation, continuous updates, and root-cause tracing — and works identically across any domain.
+##### 3-Step AI Semantic Reasoning
+Instead of one big LLM call trying to do everything at once, I split it into three focused agents so each step can be tuned separately:
 1. Role Normalization — map diverse titles to canonical roles
 2. Capability Extraction — extract structured elements: Context + Action + Measurable Outcome + Constraints
 3. Skill Deduplication & Weighting — merge equivalent skills, compute frequency-based weights
