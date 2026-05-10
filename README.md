@@ -5,11 +5,11 @@ System architecture design for transforming fragmented recruitment data into str
 I served as volunteer Solution Architect for this project. This repository documents my architecture and solution design work. The implementation was carried out by the broader project team (~15 volunteers) on the Coze (ByteDance) platform.
 ## Background
 This project serves Polus International College — a vocational institution with 5 schools, 50 programs, 17,000+ students, and ~600 faculty, established in 1993 with 60,000+ graduates and a 97%+ employment rate.
-The college faces a core challenge shared by all vocational institutions: aligning curricula with market demand at scale. Manual curriculum review takes 2+ months per program; covering all 50 programs with structured, data-driven analysis is practically impossible without automation.
+The college's biggest pain point, shared by vocational institutions everywhere: keeping curricula aligned with what employers actually need. Manual curriculum review takes a huge amount of time per program; doing this properly across all 50 programs by hand just isn't realistic.
 This project is the 0-to-1 cold start — building a reusable AI Agent architecture that can be applied program-by-program, starting from a single pilot and scaling toward full institutional coverage.
 ## Problem Analysis
 ### Across any vocational domain, recruitment data suffers from the same structural issues:
-1. Title Fragmentation: Different employers use different titles for the same core role. Without standardization, it's impossible to build a stable taxonomy or compare roles across organizations.
+1. Title Fragmentation: Different employers use different titles for the same core role. This makes it very hard to build any consistent taxonomy or compare roles across companies.
 2. Capability Opacity: Competency requirements are buried in unstructured JD text, mixed with noise (salary, benefits, promotional language). Abstract descriptions like "good communication skills" cannot be directly mapped to educational outcomes.
 3. No Shared Ontology: Unlike mature professions with established occupational standards, most vocational fields lack a structured job-skill ontology that bridges market language and educational frameworks.
 4. No Feedback Loop: Even when market analysis is done manually, findings cannot be systematically fed back into curriculum design, course planning, or teaching evaluation.
