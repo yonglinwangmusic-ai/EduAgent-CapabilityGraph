@@ -2,9 +2,9 @@
 # AI Agent Architecture for Vocational Education Capability Graph Construction
 System architecture design for transforming fragmented recruitment data into structured capability graphs for vocational education, using vertical AI Agents. Domain-agnostic — piloted with medical aesthetics. Created as a pro-bono consulting project for A Better Community (ABC), a social enterprise mobilizing professional volunteers to provide management consulting for social organizations in China.
 ## My Role
-I served as volunteer Solution Architect for this project. This repository documents my architecture and solution design work. The implementation was carried out by the broader project team (~15 volunteers) on the Coze (ByteDance) platform.
+I served as volunteer Solution Architect for this project. This repository documents my architecture and solution design work. The implementation was carried out by the broader project team (over ten volunteers) on the Coze platform.
 ## Background
-This project serves Polus International College — a vocational institution with 5 schools, 50 programs, 17,000+ students, and ~600 faculty, established in 1993 with 60,000+ graduates and a 97%+ employment rate.
+This project serves Polus International College — a vocational institution with 5 schools, 50 programs, 17,000+ students, and 600 faculty, established in 1993 with 60,000+ graduates and a 97%+ employment rate.
 The college's biggest pain point, shared by vocational institutions everywhere: keeping curricula aligned with what employers actually need. Manual curriculum review takes a huge amount of time per program; doing this properly across all 50 programs by hand just isn't realistic.
 This project is the 0-to-1 cold start — building a reusable AI Agent architecture that can be applied program-by-program, starting from a single pilot and scaling toward full institutional coverage.
 ## Problem Analysis
