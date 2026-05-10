@@ -62,9 +62,8 @@ The capability graph follows a 3-tier schema (Work Tasks → Capability Definiti
 WorldSkills, and OBE methodology. The detailed framework was developed by the Capability Graph team.
 ## Pilot: Medical Aesthetics
 The partner institution selected medical aesthetics as the first pilot program for this architecture. Results:
-- 388 JDs processed from major recruitment platforms
-- 6 standardized role categories identified
-- 18 capability modules defined across roles
+- 388 JDs collected from major recruitment platforms, 125 campus recruitment positions filtered, mapped to 27 standardized roles
+- Top 5 core skills identified: client communication, aesthetic consultation, client relationship management, device operation, skincare techniques
 - Interactive knowledge graph, skill frequency analysis, and professional fit radar generated
 ## About the Partners
 ### A Better Community (ABC)
