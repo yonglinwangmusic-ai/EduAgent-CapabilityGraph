@@ -7,7 +7,8 @@ I served as a volunteer Digital Consultant for this project, focusing on system 
 1. This project serves Polus International College — a vocational institution with 5 schools, 50 programmes, 17,000+ students, and 600 faculty, established in 1993 with 60,000+ graduates and a 97%+ employment rate.
 2. Public discourse around employment and career development in China overwhelmingly centres on university graduates, especially those from elite institutions. Vocational students — despite being a massive population — are largely invisible in these conversations, and the tools and infrastructure built for career guidance rarely account for their needs.
 3. The college's biggest pain point, which is shared by vocational institutions across China, is keeping curricula aligned with what employers actually need. Manual curriculum review takes a huge amount of time per programme; doing this properly across all 50 programmes by hand is not realistic.
-5. This project is the 0-to-1 cold start — building a reusable AI Agent architecture that can be applied programme-by-programme, starting from a single pilot and scaling toward full institutional coverage.
+4. This project was built from scratch — a reusable AI Agent architecture that can be applied programme-by-programme, starting from a single pilot and scaling towards full 
+institutional coverage.
 ## Problem Analysis
 ### Across any vocational domain, recruitment data has the same structural issues:
 1. Title Fragmentation: Different employers use different titles for the same core role. This makes it very hard to build any consistent taxonomy or compare roles across companies.
