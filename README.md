@@ -1,15 +1,15 @@
 # EduAgent-CapabilityGraph
 # AI Agent Architecture for Vocational Education Capability Graph Construction
-System architecture design for transforming fragmented recruitment data into structured capability graphs for vocational education, using vertical AI Agents. Domain-agnostic — piloted with medical aesthetics. Created as a pro-bono consulting project for A Better Community (ABC), a social enterprise mobilizing professional volunteers to provide management consulting for social organizations in China.
+System architecture design for transforming fragmented recruitment data into structured capability graphs for vocational education, using vertical AI Agents. Domain-agnostic — piloted with the medical aesthetics industry. Created as a probono consulting project for A Better Community (ABC), a social enterprise mobilising professional volunteers to provide management consulting services for social organisations in China.
 ## My Role
 I served as a volunteer Digital Consultant for this project, focusing on system architecture and solution design. This repository documents my design work. The implementation was carried out by the broader project team (over ten volunteers) on the Coze platform.
 ## Background
 1. This project serves Polus International College — a vocational institution with 5 schools, 50 programs, 17,000+ students, and 600 faculty, established in 1993 with 60,000+ graduates and a 97%+ employment rate.
-2. Public discourse around employment and career development in China overwhelmingly centers on university graduates, especially those from elite institutions. Vocational students — despite being a massive population — are largely invisible in these conversations, and the tools and infrastructure built for career guidance rarely account for their needs.
-3. The college's biggest pain point, shared by vocational institutions everywhere: keeping curricula aligned with what employers actually need. Manual curriculum review takes a huge amount of time per program; doing this properly across all 50 programs by hand just isn't realistic.
-4. This project is the 0-to-1 cold start — building a reusable AI Agent architecture that can be applied program-by-program, starting from a single pilot and scaling toward full institutional coverage.
+2. Public discourse around employment and career development in China overwhelmingly centres on university graduates, especially those from elite institutions. Vocational students — despite being a massive population — are largely invisible in these conversations, and the tools and infrastructure built for career guidance rarely account for their needs.
+3. The college's biggest pain point, which is shared by vocational institutions across China, is keeping curricula aligned with what employers actually need. Manual curriculum review takes a huge amount of time per program; doing this properly across all 50 programs by hand is not realistic.
+5. This project is the 0-to-1 cold start — building a reusable AI Agent architecture that can be applied program-by-program, starting from a single pilot and scaling toward full institutional coverage.
 ## Problem Analysis
-### Across any vocational domain, recruitment data suffers from the same structural issues:
+### Across any vocational domain, recruitment data has the same structural issues:
 1. Title Fragmentation: Different employers use different titles for the same core role. This makes it very hard to build any consistent taxonomy or compare roles across companies.
 2. Capability Opacity: Competency requirements are buried in unstructured JD text, mixed with noise (salary, benefits, promotional language). Abstract descriptions like "good communication skills" cannot be directly mapped to educational outcomes.
 3. No Shared Ontology: Unlike mature professions with established occupational standards, most vocational fields lack a structured job-skill ontology that bridges market language and educational frameworks.
@@ -53,8 +53,8 @@ framework                                 matrix built
 ##### Dual Identifier System
 A-code tags every original JD; B-code maps to standardized positions. This preserves data lineage for weight computation, continuous updates, and root-cause tracing — and works identically across any domain.
 ##### 3-Step AI Semantic Reasoning
-Instead of one big LLM call trying to do everything at once, I split it into three focused agents so each step can be tuned separately:
-1. Role Normalization — map diverse titles to canonical roles
+I built the model with three specialised agents, instead of using one big LLM call, trying to do everything at once, so that each step can be tuned separately.
+1. Role Normalisation — map diverse titles to canonical roles
 2. Capability Extraction — extract structured elements: Context + Action + Measurable Outcome + Constraints
 3. Skill Deduplication & Weighting — merge equivalent skills, compute frequency-based weights
 #### 3-Tier Capability Graph Schema
@@ -68,7 +68,7 @@ The partner institution selected medical aesthetics as the first pilot program f
 - Interactive knowledge graph, skill frequency analysis, and professional fit radar generated
 ## About the Partners
 ### A Better Community (ABC)
-Founded in 2008, ABC is China's first social enterprise that mobilizes professional volunteers to provide management consulting for social organizations. With 6 chapters (Beijing, Shanghai, Chengdu, Shenzhen, Guangzhou, Hangzhou), ABC has engaged 3,100+ professional volunteers across 300+ consulting projects in education, environment, social services, and more.
+Founded in 2008, ABC is China's first social enterprise that mobilises professional volunteers to provide management consulting for social organizations. With 6 chapters (Beijing, Shanghai, Chengdu, Shenzhen, Guangzhou, Hangzhou), ABC has engaged 3,100+ professional volunteers across 300+ consulting projects in education, environment, social services, and more.
 ### Polus International College
 Est. 1993. China's only private provincial-level demonstration vocational college.
 ## License
