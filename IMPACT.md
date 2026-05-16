@@ -13,5 +13,10 @@ I was not involved in code implementation or deployment. My contribution was the
 - Interactive knowledge graph and analysis outputs delivered to partner institution
 - Replicable methodology established for extending to additional programmes
 ## Testimonials
-
+> "This development has given our leadership team a much clearer 
+> view of the job market for each area of study — what entry-level 
+> roles are available, which skills are most in demand, and where 
+> gaps exist in our current curriculum."
+> 
+> — Yipei Liu, Principal, Polus International College
 
