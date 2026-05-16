@@ -22,11 +22,11 @@ Strict separation between domain-agnostic infrastructure (reusable across any pr
 #### Architecture Separation Diagram
 ```
 ┌────────────────────────────────────────────────────────┐
-│  Domain Configuration (per programme)                     │
+│  Domain Configuration (per programme)                   │
 │  • Capability standards                                 │
 │  • Terminology dictionary                               │
 │  • Data sources & keywords                              │
-│            ▲ SWAP THIS LAYER PER PROGRAMME ▲              │
+│            ▲ SWAP THIS LAYER PER PROGRAMME ▲            │
 ├────────────────────────────────────────────────────────┤
 │  Domain-Agnostic Infrastructure                         │
 │  • AI Agent pipeline (4-stage)                          │
