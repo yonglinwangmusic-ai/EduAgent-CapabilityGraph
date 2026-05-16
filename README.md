@@ -4,10 +4,10 @@ System architecture design for transforming fragmented recruitment data into str
 ## My Role
 I served as a volunteer Digital Consultant for this project, focusing on system architecture and solution design. This repository documents my design work. The implementation was carried out by the broader project team (over ten volunteers) on the Coze platform.
 ## Background
-1. This project serves Polus International College — a vocational institution with 5 schools, 50 programs, 17,000+ students, and 600 faculty, established in 1993 with 60,000+ graduates and a 97%+ employment rate.
+1. This project serves Polus International College — a vocational institution with 5 schools, 50 programmes, 17,000+ students, and 600 faculty, established in 1993 with 60,000+ graduates and a 97%+ employment rate.
 2. Public discourse around employment and career development in China overwhelmingly centres on university graduates, especially those from elite institutions. Vocational students — despite being a massive population — are largely invisible in these conversations, and the tools and infrastructure built for career guidance rarely account for their needs.
-3. The college's biggest pain point, which is shared by vocational institutions across China, is keeping curricula aligned with what employers actually need. Manual curriculum review takes a huge amount of time per program; doing this properly across all 50 programs by hand is not realistic.
-5. This project is the 0-to-1 cold start — building a reusable AI Agent architecture that can be applied program-by-program, starting from a single pilot and scaling toward full institutional coverage.
+3. The college's biggest pain point, which is shared by vocational institutions across China, is keeping curricula aligned with what employers actually need. Manual curriculum review takes a huge amount of time per programme; doing this properly across all 50 programmes by hand is not realistic.
+5. This project is the 0-to-1 cold start — building a reusable AI Agent architecture that can be applied programme-by-programme, starting from a single pilot and scaling toward full institutional coverage.
 ## Problem Analysis
 ### Across any vocational domain, recruitment data has the same structural issues:
 1. Title Fragmentation: Different employers use different titles for the same core role. This makes it very hard to build any consistent taxonomy or compare roles across companies.
@@ -18,15 +18,15 @@ I served as a volunteer Digital Consultant for this project, focusing on system 
 - Keyword-based approaches cannot handle the contextual reasoning required: domain-specific slang vs academic terminology, implicit skill requirements, and the need to transform raw JD language into measurable educational competency statements.
 ## Solution Architecture
 ### Core Design Principle
-Strict separation between domain-agnostic infrastructure (reusable across any program) and domain-specific configuration (swapped per program). Adding a new vocational discipline requires only changing the configuration — not rebuilding the system.
+Strict separation between domain-agnostic infrastructure (reusable across any programme) and domain-specific configuration (swapped per programme). Adding a new vocational discipline requires only changing the configuration — not rebuilding the system.
 #### Architecture Separation Diagram
 ```
 ┌────────────────────────────────────────────────────────┐
-│  Domain Configuration (per program)                     │
+│  Domain Configuration (per programme)                     │
 │  • Capability standards                                 │
 │  • Terminology dictionary                               │
 │  • Data sources & keywords                              │
-│            ▲ SWAP THIS LAYER PER PROGRAM ▲              │
+│            ▲ SWAP THIS LAYER PER PROGRAMME ▲              │
 ├────────────────────────────────────────────────────────┤
 │  Domain-Agnostic Infrastructure                         │
 │  • AI Agent pipeline (4-stage)                          │
@@ -44,14 +44,14 @@ Construction         Preparation          Association           Application
 National/Intl.  →    Multi-platform  →    JD capability    →    Capability radar
 standards            JD ingestion,        items matched         per direction;
 build initial        cleaning &           to std. units;        teaching & market
-capability           standardization      association           insight reports
+capability           standardisation      association           insight reports
 framework                                 matrix built
      ↑                                         │
      └──── Framework dynamic update loop ──────┘
 ```
 #### Key Design Components
 ##### Dual Identifier System
-A-code tags every original JD; B-code maps to standardized positions. This preserves data lineage for weight computation, continuous updates, and root-cause tracing — and works identically across any domain.
+A-code tags every original JD; B-code maps to standardised positions. This preserves data lineage for weight computation, continuous updates, and root-cause tracing — and works identically across any domain.
 ##### 3-Step AI Semantic Reasoning
 I built the model with three specialised agents, instead of using one big LLM call, trying to do everything at once, so that each step can be tuned separately.
 1. Role Normalisation — map diverse titles to canonical roles
@@ -62,13 +62,13 @@ Universal schema referenced from national vocational standards, WorldSkills, and
 The capability graph follows a 3-tier schema (Work Tasks → Capability Definition → Teaching Support) referencing national vocational standards, 
 WorldSkills, and OBE methodology. The detailed framework was developed by the Capability Graph team.
 ## Pilot: Medical Aesthetics
-The partner institution selected medical aesthetics as the first pilot program for this architecture. Results:
-- 388 JDs collected from major recruitment platforms, 125 campus recruitment positions filtered, mapped to 27 standardized roles
+The partner institution selected medical aesthetics as the first pilot programme for this architecture. Results:
+- 388 JDs collected from major recruitment platforms, 125 campus recruitment positions filtered, mapped to 27 standardised roles
 - Top 5 core skills identified: client communication, aesthetic consultation, client relationship management, device operation, skincare techniques
 - Interactive knowledge graph, skill frequency analysis, and professional fit radar generated
 ## About the Partners
 ### A Better Community (ABC)
-Founded in 2008, ABC is China's first social enterprise that mobilises professional volunteers to provide management consulting for social organizations. With 6 chapters (Beijing, Shanghai, Chengdu, Shenzhen, Guangzhou, Hangzhou), ABC has engaged 3,100+ professional volunteers across 300+ consulting projects in education, environment, social services, and more.
+Founded in 2008, ABC is China's first social enterprise that mobilises professional volunteers to provide management consulting for social organisations. With 6 chapters (Beijing, Shanghai, Chengdu, Shenzhen, Guangzhou, Hangzhou), ABC has engaged 3,100+ professional volunteers across 300+ consulting projects in education, environment, social services, and more.
 ### Polus International College
 Est. 1993. China's only private provincial-level demonstration vocational college.
 ## License
